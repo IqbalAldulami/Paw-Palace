@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>PawPalace – Mishmish Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Header: small variant for details pages -->
+  <header class="site-header small">
+    <div class="brand">
+      <a class="back-link" href="index.html" aria-label="Back to Home">← Back</a>
+      <a href="index.html" aria-label="PawPalace Home">
+        <img src="images/label.webp" alt="Logo" class="logo">
+      </a>
+      <h1 id="site-title">PawPalace</h1>
+    </div>
+  </header>
+
+  <!-- Profile details -->
+  <main class="details">
+    <article class="details-card profile">
+      <div class="media">
+        <img src="images/cat1.webp" alt="Mishmish photo">
+      </div>
+      <section class="info">
+        <header>
+          <h2 class="cat-name">Mishmish – Persian</h2>
+          <p class="meta"><strong>Age:</strong> 2 months • <strong>Gender:</strong> Female • <strong>Status:</strong> <span class="badge badge-available">Available for Adoption</span></p>
+        </header>
+
+        <h3 class="section-title">Care Schedule</h3>
+        <hr class="rule">
+        <table class="care-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Routine</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Feeding</td>
+              <td>4 small meals per day</td>
+              <td>Kitten wet food or soaked dry food until 3 months old</td>
+            </tr>
+            <tr>
+              <td>Water</td>
+              <td>Daily</td>
+              <td>Always provide fresh, clean water</td>
+            </tr>
+            <tr>
+              <td>Litter Box</td>
+              <td>Scoop twice daily</td>
+              <td>Unscented, fine-textured litter • Change every 3–4 days</td>
+            </tr>
+            <tr>
+              <td>Grooming</td>
+              <td>Brush 1–2× per week</td>
+              <td>Use a soft brush • Helps kittens get used to handling</td>
+            </tr>
+            <tr>
+              <td>Nail Trim</td>
+              <td>Every 2–3 weeks</td>
+              <td>Kitten-safe clippers • Start young to build comfort</td>
+            </tr>
+            <tr>
+              <td>Bathing</td>
+              <td>Only if needed</td >
+              <td>Use lukewarm water & cat-safe shampoo • Dry thoroughly</td>
+            </tr>
+            <tr>
+              <td>Vet Visits</td>
+              <td>At 8 weeks</td>
+              <td>First vaccines & deworming per vet guidance</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- JS inserts the toggleable details into this section -->
+        <section id="personality-section"></section>
+
+        <div class="form-actions" style="margin-top:14px">
+          <a class="btn primary" href="adopt.html?cat=Mishmish">Start Adoption</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer: contact as plain text; icons via CSS -->
+  <footer class="site-footer">
+    <nav aria-label="Footer links">
+      <ul class="footer-links">
+        <li>contact@pawpalace.example</li>
+        <li>055 0456 7809
+        </li>
+        <li>pawpalace_demo</li>
+      </ul>
+    </nav>
+    <p>©️ 2025 PawPalace</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

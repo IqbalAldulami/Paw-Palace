@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>PawPalace – Find Your Forever Cat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <!-- Header: logo is a link back to the homepage -->
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" aria-label="PawPalace Home">
+        <img src="images/label.webp" alt="PawPalace Logo" class="logo">
+      </a>
+      <div>
+        <h1 id="site-title">PawPalace</h1>
+        <p class="tagline">Adopt love, one paw at a time.</p>
+      </div>
+    </div>
+
+    
+  </header>
+
+  <!-- Hero image -->
+  <section class="hero" role="img" aria-label="Happy adopted cats">
+    <img src="images/baner.jpg" alt="Happy cats banner">
+  </section>
+
+  <!-- Main -->
+  <main>
+    <section class="intro">
+      <header><h2>Welcome to PawPalace</h2></header>
+      <p>
+        We connect loving families with wonderful cats. Browse available companions below,
+        learn about their care needs, and start the adoption journey.
+      </p>
+      
+    </section>
+
+    <!-- Available Cats -->
+    <section id="available" class="gallery-section">
+      <header><h3>Available Cats</h3></header>
+      
+      
+      <div class="toolbar" style="margin:10px 0;">
+  <label for="breedFilter" style="margin-right:8px;">Filter by breed:</label>
+  <select id="breedFilter" style="padding:8px;border:1px solid #ddd;border-radius:8px;">
+    <option value="all">All</option>
+    <option value="Persian">Persian</option>
+    <option value="tabby">Tabby</option>
+    <option value="british">British</option>
+  </select>
+</div>
+
+      <article class="card" data-breed="Persian">
+        <a href="cat1.html">
+          <img src="images/cat1.webp" alt="Playful cat">
+          <h4 class="cat-name">Mishmish</h4>
+          <p class="meta"><strong>Breed:</strong> Persian • <strong>Age:</strong> 2 months</p>
+          <p class="status available">Available</p>
+        </a>
+      </article>
+
+      <article class="card" data-breed="tabby">
+        <a href="cat2.html">
+          <img src="images/cat2.jpg" alt="Curious kitten">
+          <h4 class="cat-name">Simba</h4>
+          <p class="meta"><strong>Breed:</strong> Tabby Mix • <strong>Age:</strong> 7 months</p>
+          <p class="status available">Available</p>
+        </a>
+      </article>
+
+      <article class="card" data-breed="british">
+        <a href="cat3.html">
+          <img src="images/cat3.jpg"
+               alt="Friendly cat"
+               onerror="this.src='images/baner.png'; this.alt='Cat photo unavailable';">
+          <h4 class="cat-name">Nala</h4>
+          <p class="meta"><strong>Breed:</strong> British Shorthair • <strong>Age:</strong> 1.5 years</p>
+          <p class="status available">Available</p>
+        </a>
+      </article>
+    </section>
+
+  
+<aside class="facts">
+  <h3>Cat Care Quick Tips</h3>
+  <p class="facts-sub">Practical essentials for a happy, healthy cat at home.</p>
+  <ul>
+    <li>Schedule regular vet check-ups.</li>
+    <li>Provide fresh water and a balanced diet.</li>
+    <li>Daily playtime boosts bonding.</li>
+    <li>Keep litter boxes clean.</li>
+  </ul>
+</aside>
+
+  </main>
+
+  <!-- Footer: contact as plain text; icons added via CSS -->
+  <footer class="site-footer">
+    <nav aria-label="Footer links">
+      <ul class="footer-links">
+        <li>contact@pawpalace.example</li>
+        <li>055 000 0000</li>
+        <li>@pawpalace_demo</li>
+      </ul>
+    </nav>
+    <p>©️ 2025 PawPalace. All rights reserved.</p>
+  </footer>
+   <script src="script.js"></script>
+
+</body>
+</html>

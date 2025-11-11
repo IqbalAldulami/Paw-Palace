@@ -1,0 +1,267 @@
+/* ==========================================================================
+   PawPalace styles
+   - Brief comments for non-obvious intent only
+   ========================================================================== */
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif; color: #222; background: #fafafa; }
+
+/* Header / Brand */
+.site-header { padding: 12px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.site-header.small { padding: 8px 12px; }
+.brand { display: flex; align-items: center; gap: 8px; }
+.logo { width: 28px; height: 28px; object-fit: cover; }
+.site-header.small .logo { width: 24px; height: 24px; }
+#site-title { font-size: 22px; }
+.tagline { font-size: 12px; color: #666; }
+
+/* Toolbar */
+.toolbar { margin-top: 10px; }
+.filters li a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Anchor states — higher contrast for readability */
+a:link    { color: #1f2937; }
+a:visited { color: #1f2937; }
+a:hover   { text-decoration: underline; color: #0d6240; }
+a:active  { color: #891a1a; }
+
+/* Header back link — clearer contrast on light header */
+.back-link {
+  color: #374151;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.site-header .back-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Hero */
+.hero img { width: 100%; height: 240px; object-fit: cover; display: block; }
+
+/* Intro */
+.intro { padding: 24px 20px; max-width: 900px; margin: 0 auto; }
+.intro h2 { font-size: 24px; margin-bottom: 8px; }
+.intro p { margin: 10px 0 16px; line-height: 1.6; }
+
+/* Buttons — high contrast */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #7baa92;       
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #0f1f57;
+}
+.btn.primary {
+  background: #7baa92;        
+  border-color: #0d3d25;
+}
+.btn:hover, .btn:focus {
+  filter: brightness(1.05);
+  text-decoration: none;
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* Gallery */
+.gallery-section { padding: 16px 20px; max-width: 100%; margin: 0 auto; }
+.gallery-section > header h3 { font-size: 20px; margin: 8px 0 14px; }
+.card {
+  border: 1px solid #eee;
+  background: #f1c66f;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  margin: 8px;
+  vertical-align: top;
+}
+.card:hover { box-shadow: 0 10px 22px rgba(0,0,0,0.08); transform: translateY(-2px); transition: box-shadow .2s, transform .2s; }
+.card a { text-decoration: none; }
+.card img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; display: block; }
+.cat-name { margin: 10px 0 6px; font-size: 18px; }
+.meta { font-size: 13px; color: #555; }
+.status { margin-top: 6px; font-size: 13px; }
+.available { color: #0d6240; background: #e9f7f0; padding: 2px 8px; border-radius: 999px; display: inline-block; }
+.unavailable { color: #7a1b1b; background: #fdecec; padding: 2px 8px; border-radius: 999px; display: inline-block; }
+
+/* Facts */
+.facts { max-width: 900px; margin: 10px auto 24px; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 16px; }
+.facts h3 { margin-bottom: 8px; font-size: 18px; }
+.facts ul { padding-left: 18px; line-height: 1.8; }
+
+/* Details page */
+.details { padding: 20px; max-width: 1000px; margin: 0 auto; }
+.details-card {
+  background: #fff; border: 1px solid #eee; border-radius: 12px;
+  padding: 16px;
+}
+.details-card .media img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
+.details-card .info header { margin-bottom: 8px; }
+.details-card .cat-name { font-size: 24px; }
+.details-card .meta { margin: 6px 0; }
+.details-card .desc { margin: 10px 0 14px; line-height: 1.7; }
+.care h3 { font-size: 18px; margin: 10px 0; }
+.care ul { padding-left: 18px; line-height: 1.8; }
+.details-card .btn.primary { margin-top: 12px; }
+.back-link { text-decoration: none; font-size: 14px; }
+
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.badge-available { background: #e9f7f0; color: #0d6240; border: 1px solid #b9e5d2; }
+.badge-unavailable { background: #fdecec; color: #7a1b1b; border: 1px solid #f3c4c4; }
+
+/* Section rule */
+.rule { border: 0; border-top: 2px solid #f0f0f0; margin: 10px 0 12px; }
+
+/* Care table */
+.care-table { width: 100%; border-collapse: collapse; background: #fff; }
+.care-table th, .care-table td { border: 1px solid #eee; padding: 10px; text-align: start; font-size: 14px; }
+.care-table thead th { background: #f9fafb; font-weight: 700; }
+
+/* Callout */
+.callout { margin-top: 10px; background: #fff9db; border: 1px solid #f4e5a6; color: #4a4a2a; padding: 10px 12px; border-radius: 8px; font-size: 14px; }
+
+/* Form card */
+.form-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 720px;
+  margin: 16px auto;
+}
+.form-head h2 { font-size: 22px; margin-bottom: 6px; }
+.form-head p  { color: #555; }
+
+form fieldset {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 14px;
+}
+form legend { padding: 0 6px; font-size: 14px; color: #444; }
+
+.form-row { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+label { font-weight: 600; }
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font-size: 14px;
+}
+input:focus, textarea:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+  border-color: #93c5fd;
+  background: #fff;
+}
+input:invalid { background: #fff5f5; border-color: #e57373; }
+input:valid   { background: #f3fff6; border-color: #7bc79a; }
+
+.form-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+
+/* Form success block */
+.form-done { background: #f6fffb; border: 1px solid #b1e7d2; border-radius: 12px; padding: 16px; margin-top: 16px; }
+
+/* Footer */
+.site-footer { margin-top: 24px; padding: 16px 20px; background: #fff; border-top: 1px solid #eee; text-align: center; }
+.footer-links { list-style: none; display: inline-flex; gap: 14px; margin-bottom: 8px; }
+.footer-links a { text-decoration: none; font-size: 14px; }
+.footer-links li { font-size: 14px; }
+
+/* Footer contact icons — icons via CSS so HTML stays plain text */
+.footer-links {
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between icon and text */
+}
+.footer-links li::before {
+  display: inline-block;
+}
+/* Map: 1=email, 2=phone, 3=instagram */
+.footer-links li:nth-child(1)::before { content: "📧"; }
+.footer-links li:nth-child(2)::before { content: "📞"; }
+.footer-links li:nth-child(3)::before { content: "📷"; }
+
+/* Small screens */
+@media (max-width: 760px) {
+  .details-grid { grid-template-columns: 1fr; }
+  .card { max-width: 100%; }
+  #site-title { font-size: 20px; }
+}
+
+/* Refined Tips (Facts) box */
+.facts {
+  background: #ffffff;
+  border: 1px solid #774e4e;
+  border-left: 6px solid #7baa92;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.facts h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #2d3a35;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.facts-sub {
+  margin: 0.25rem 0 0.75rem;
+  color: #64706b;
+  font-size: 0.95rem;
+}
+
+.facts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 14px;
+  grid-row-gap: 8px;
+}
+
+.facts li {
+  position: relative;
+  padding: 0.35rem 24px 0.35rem 0;
+  font-size: 0.98rem;
+  color: #2d2f31;
+}
+
+/* RTL-friendly check icon */
+.facts li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  top: 0.35rem;
+  color: #3a7d5f;
+  font-weight: 800;
+}
+
+

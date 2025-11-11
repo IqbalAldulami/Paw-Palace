@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>PawPalace – Nala Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Header: small variant for details pages -->
+  <header class="site-header small">
+    <div class="brand">
+      <a class="back-link" href="index.html" aria-label="Back to Home">← Back</a>
+      <a href="index.html" aria-label="PawPalace Home">
+        <img src="images/label.webp" alt="Logo" class="logo">
+      </a>
+      <h1 id="site-title">PawPalace</h1>
+    </div>
+  </header>
+
+  <!-- Profile details -->
+  <main class="details">
+    <article class="details-card profile">
+      <div class="media">
+        <img src="images/cat3.jpeg" alt="Nala photo" onerror="this.src='images/cat3.jpg'; this.alt='Cat photo unavailable';">
+      </div>
+      <section class="info">
+        <header>
+          <h2 class="cat-name">Nala – British Shorthair</h2>
+          <p class="meta"><strong>Age:</strong> 1.5 years • <strong>Gender:</strong> Female • <strong>Status:</strong> <span class="badge badge-available">Available for Adoption</span></p>
+        </header>
+
+        <h3 class="section-title">Care Schedule</h3>
+        <hr class="rule">
+        <table class="care-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Routine</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feeding</td>
+      <td>2 meals per day</td>
+      <td>Adult cat food (dry or wet) • Adjust portion based on weight and activity</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>Daily</td>
+      <td>Provide fresh water at all times • Clean bowl 1–2× per week</td>
+    </tr>
+    <tr>
+      <td>Litter Box</td>
+      <td>Clean daily</td>
+      <td>Scoop once or twice daily • Change litter weekly • Use unscented clumping litter</td>
+    </tr>
+    <tr>
+      <td>Grooming</td>
+      <td>Brush 2–3× per week</td>
+      <td>Helps reduce shedding and hairballs • More often if long-haired</td>
+    </tr>
+    <tr>
+      <td>Nail Trim</td>
+      <td>Every 3–4 weeks</td>
+      <td>Use cat-safe nail clippers • Encourage scratching on posts</td>
+    </tr>
+    <tr>
+      <td>Bathing</td>
+      <td>Every 2–3 months or as needed</td>
+      <td>Use lukewarm water and gentle cat shampoo • Dry thoroughly afterward</td>
+    </tr>
+    <tr>
+      <td>Vet Visits</td>
+      <td>Once a year</td>
+      <td>General check-up, vaccines, and parasite control</td>
+    </tr>
+  </tbody>
+</table>
+<!-- JS inserts the toggleable details into this section -->
+<section id="personality-section"></section>
+        
+        <div class="form-actions" style="margin-top:14px">
+          <a class="btn primary" href="adopt.html?cat=Nala">Start Adoption</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <!-- Footer: contact as plain text; icons via CSS -->
+  <footer class="site-footer">
+    <nav aria-label="Footer links">
+      <ul class="footer-links">
+        <li>contact@pawpalace.example</li>
+        <li>055 000 0000</li>
+        <li>@pawpalace_demo</li>
+      </ul>
+    </nav>
+    <p>©️ 2025 PawPalace</p>
+  </footer>
+   <script src="script.js"></script>
+
+</body>
+</html>
